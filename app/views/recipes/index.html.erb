@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+ <td><%= image_tag recipe.image.url, class: "recipe-show" if recipe.image? %></td>
+
 <h1>Recipes</h1>
 
 <table class="table table-bordered">
