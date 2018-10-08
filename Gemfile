@@ -15,6 +15,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'nested_form_fields'
 gem 'carrierwave', '~> 1.0'
+gem 'fog-aws'
 
 group :production do 
   gem 'pg'
