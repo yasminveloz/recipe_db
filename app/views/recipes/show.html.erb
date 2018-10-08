@@ -3,14 +3,14 @@
 <% if @recipe.image? %>
 <%= image_tag @recipe.image.url, class: "recipe-show" %>
 <% end %>
-
+<div class="show-page">
 <p>
-  <strong>Title:</strong>
+  <h3>Title:</h3>
   <%= @recipe.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <h3>Description:</h3>
   <%= @recipe.description %>
 </p>
 
@@ -28,7 +28,10 @@
 <li><%= @step.direction %></li>
 <% end %>
 </ol>
+</div><!-- /show page-->
 
-
+<div class="btn-default">
+<button type="button" class="btn btn-deafault">
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-<%= link_to 'Back', recipes_path %>
+<%= link_to 'Back', recipes_path %></button>
+</div><!--/ btn default-->
